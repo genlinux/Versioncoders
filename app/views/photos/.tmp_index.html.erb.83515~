@@ -1,0 +1,24 @@
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+
+<% for photo in @photos %>
+  <tr>
+    <td><%=h photo.user_id %></td>
+    <td><%=h photo.title %></td>
+    <td><%=h photo.body %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    <td><%= link_to 'Destroy', photo, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New photo', new_photo_path %>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/46/trunk/railcoders/config/initializers
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/46/trunk/railcoders/config/initializers/mime_types.rb
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/46/trunk/railcoders/config/initializers/inflections.rb
+END
+new_rails_defaults.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/46/trunk/railcoders/config/initializers/new_rails_defaults.rb
+END

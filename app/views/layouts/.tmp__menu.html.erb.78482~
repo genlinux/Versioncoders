@@ -1,0 +1,29 @@
+<ul>
+    <li>
+        <%= link_to 'Home', index_path %>
+    </li>
+    <li>
+        <%= link_to 'Edit Pages', pages_path %>
+    </li>
+    <li>
+        <hr size="1" width="90%" align="left">
+    </li>
+    <li>
+        <% if is_logged_in? %>
+        <li>
+            Logged in as: <i><%= logged_in_user.username %></i>
+        </li>
+        <li>
+            <%= link_to 'Logout', {:controller => 'account', :action => 'logout'},
+            :method => :post %>
+        </li>
+        <% else %>
+        <li>
+            <%= link_to 'Signup', :controller => 'users', :action => 'new' %>
+        </li>
+        <li>
+            <%= link_to 'Login', :controller => 'account', :action => 'login' %>
+        </li>
+        <% end %>
+    </li>
+</ul>

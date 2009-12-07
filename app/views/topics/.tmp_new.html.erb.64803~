@@ -1,0 +1,18 @@
+<h2>New topic</h2>
+<% form_for([@forum, @topic]) do |f| %>
+<%= f.error_messages %>
+<p>
+    <%= f.label :Subject %>
+    <br/>
+    <%= f.text_field :name,:size=>40 %>
+</p>
+<p>
+    <%= f.label :first_post %>
+    <br/>
+    <%= text_area :post, :body, :rows => 8, :cols => 60 -%>
+</p>
+<p>
+    <%= f.submit "Create" %>
+</p>
+<% end %>
+<%#= link_to 'Back', topics_path %>

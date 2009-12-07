@@ -1,0 +1,41 @@
+<!--<h1>Listing entries</h1>
+<table>
+<tr>
+<th>User</th>
+<th>Title</th>
+<th>Body</th>
+<th>Comments count</th>
+</tr>
+<% for entry in @entries %>
+<tr>
+<td><%=h entry.user_id %></td>
+<td><%=h entry.title %></td>
+<td><%=h entry.body %></td>
+<td><%=h entry.comments_count %></td>
+<td><%#= link_to 'Show', entry %></td>
+<td><%#= link_to 'Edit', edit_entry_path(entry) %></td>
+<td><%#= link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+</table>
+<br />
+<%#= link_to 'New entry', new_user_entry_path %>--><h1><%= link_to blog_title(@user),user_entries_path %></h1>
+<%@entries.each do |entry| -%>
+<div class='blogentry'>
+    <h2><%=link_to entry.title,([@user,entry]) %></h2>
+    <% if is_logged_in? and logged_in_user.id == @user.id -%>
+    <div clas="blogoptions">
+        <%= link_to 'Edit',[:edit, @user, entry] %>
+        <%= link_to 'Destroy',[@user, entry],
+        :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+    <% end -%>
+    <%=content_tag :div,textilize(entry.body),:class=>'blogentrybody' %>
+    <div class="blognumcomments">
+        <p>
+            <%= link_to pluralize(entry.comments_count, 'comment'),[@user, entry]-%>
+        </p>
+    </div>
+</div>
+<%end %>
+<%=will_paginate @entries%>

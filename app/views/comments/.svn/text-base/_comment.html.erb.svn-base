@@ -1,0 +1,17 @@
+<%div_for comment do%>
+<p class="commentfrom">
+    At <%= comment.created_at.to_s(:short) %>,<%= comment.user.username %>said:
+</p>
+<% if is_logged_in? and logged_in_user.id == @entry.user.id -%>
+<p class="commentdelete">
+    <%= link_to 'Delete this comment',user_entry_comment_path(:user_id => @entry.user,
+    :entry_id => @entry.id,
+    :id => comment.id),
+    :confirm => 'Are you sure?',
+    :method => :delete -%>
+</p>
+<% end -%>
+<p class="commentbody">
+    <%=h comment.body %>
+</p>
+<%end%>

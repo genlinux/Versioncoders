@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/130/trunk/railcoders/app/models
+END
+category.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/64/trunk/railcoders/app/models/category.rb
+END
+email.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/95/trunk/railcoders/app/models/email.rb
+END
+friendship.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/107/trunk/railcoders/app/models/friendship.rb
+END
+newsletter.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/96/trunk/railcoders/app/models/newsletter.rb
+END
+role.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/50/trunk/railcoders/app/models/role.rb
+END
+article.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/71/trunk/railcoders/app/models/article.rb
+END
+entry.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/112/trunk/railcoders/app/models/entry.rb
+END
+photo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/120/trunk/railcoders/app/models/photo.rb
+END
+page.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/46/trunk/railcoders/app/models/page.rb
+END
+topic.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/71/trunk/railcoders/app/models/topic.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/130/trunk/railcoders/app/models/user.rb
+END
+notifier.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/101/trunk/railcoders/app/models/notifier.rb
+END
+forum.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/70/trunk/railcoders/app/models/forum.rb
+END
+post.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/113/trunk/railcoders/app/models/post.rb
+END
+comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/75/trunk/railcoders/app/models/comment.rb
+END

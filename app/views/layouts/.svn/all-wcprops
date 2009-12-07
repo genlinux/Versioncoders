@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/125/trunk/railcoders/app/views/layouts
+END
+entries.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/74/trunk/railcoders/app/views/layouts/entries.html.erb
+END
+_menu.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/121/trunk/railcoders/app/views/layouts/_menu.html.erb
+END
+roles.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/49/trunk/railcoders/app/views/layouts/roles.html.erb
+END
+articles.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/54/trunk/railcoders/app/views/layouts/articles.html.erb
+END
+categories.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/54/trunk/railcoders/app/views/layouts/categories.html.erb
+END
+newsletters.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/95/trunk/railcoders/app/views/layouts/newsletters.html.erb
+END
+users.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/46/trunk/railcoders/app/views/layouts/users.html.erb
+END
+pages.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/125/trunk/railcoders/app/views/layouts/pages.html.erb
+END
+topics.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64/trunk/railcoders/app/views/layouts/topics.html.erb
+END
+comments.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/74/trunk/railcoders/app/views/layouts/comments.html.erb
+END
+posts.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/64/trunk/railcoders/app/views/layouts/posts.html.erb
+END
+forums.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/64/trunk/railcoders/app/views/layouts/forums.html.erb
+END
+photos.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/82/trunk/railcoders/app/views/layouts/photos.html.erb
+END

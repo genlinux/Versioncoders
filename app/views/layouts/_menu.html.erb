@@ -1,0 +1,79 @@
+<ul>
+    <li>
+        <%= link_to_unless_current 'Home', index_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'News', articles_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'Forums', forums_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'Blogs', blogs_path %>
+    </li>
+	<li><%= link_to_unless_current 'Photo Tags', tags_path %></li>
+    <li>
+        <hr size="1" width="90%" align="left">
+    </li>
+    <li>
+        <% if is_logged_in? %>
+        <li>
+            Logged in as: <i><%= logged_in_user.username %></i>
+        </li>
+        <li>
+            <%= link_to_unless_current 'My Profile',user_path(logged_in_user) %>
+        </li>
+        <li>
+            <%= link_to_unless_current 'My Friends', user_friends_path(logged_in_user) %>
+        </li>
+        <li>
+            <%= link_to_unless_current 'New Blog Post', new_user_entry_path(logged_in_user) -%>
+        </li>
+        <li>
+            <%= link_to_unless_current 'Photos', user_photos_path(logged_in_user) %>
+        </li>
+        <li>
+            <%= link_to 'Logout', {:controller => 'account', :action => 'logout'},
+            :method => :post %>
+        </li>
+        <% else %>
+        <li>
+            <%= link_to 'Signup', :controller => 'users', :action => 'new' %>
+        </li>
+        <li>
+            <%= link_to 'Login', :controller => 'account', :action => 'login' %>
+        </li>
+        <% end %>
+    </li>
+    <% if logged_in_user and logged_in_user.has_role?('administrator') %>
+    <li>
+        <hr size="1" width="90%" align="left"/>
+    </li>
+    <li>
+        <b>Admin Options</b>
+    </li>
+    <li>
+        <%= link_to_unless_current 'Administer Users', users_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'Edit Pages', pages_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'Newsletters', newsletters_path %>
+    </li>
+    <% end %>
+    <% if is_logged_in? and logged_in_user.has_role?('editor') %>
+    <li>
+        <hr size="1" width="90%" align="left" />
+    </li>
+    <li>
+        <b>Editor Options</b>
+    </li>
+    <li>
+        <%= link_to_unless_current 'News Articles', admin_articles_path %>
+    </li>
+    <li>
+        <%= link_to_unless_current 'News Categories', admin_categories_path %>
+    </li>
+    <% end %>
+</ul>

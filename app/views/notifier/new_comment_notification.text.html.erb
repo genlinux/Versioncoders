@@ -1,0 +1,10 @@
+<p>Hi <%= @blog_owner.username %>,</p>
+
+<p>A new comment has been left on your blog at VersionCoders.net.</p>
+
+<p>The comment was left by '<%= @comment.user.username %>' at <%= @comment.created_at.to_s(:short) %>.</p>
+
+<p>To read the comment, go to <%= @blog_entry_url %>.</p>
+
+<p>Cheers,<br />
+<a href='http://railscoders.net'>The VersionCoders Team</a></p>

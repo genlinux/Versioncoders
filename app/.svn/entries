@@ -1,0 +1,51 @@
+10
+
+dir
+130
+https://genlinuxworks.googlecode.com/svn/trunk/railcoders/app
+https://genlinuxworks.googlecode.com/svn
+
+
+
+2009-12-05T13:36:03.839300Z
+130
+genlinuxworks
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c40f877c-b002-11dd-af79-39f66dce3c3c
+
+
+
+
+
+
+0
+empty
+
+controllers
+dir
+
+helpers
+dir
+
+models
+dir
+
+scripteka
+dir
+
+views
+dir
+

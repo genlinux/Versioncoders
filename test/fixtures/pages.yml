@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+valid_page:
+  id: 1
+  title: Welcome Page
+  permalink: welcome-page
+  body: Welcome to Railscoders
+invalid_page_short_title:
+  id: 2
+  title: a
+  permalink: a
+  body: The title is shorter than 3 characters
+valid_with_auto_permalink:
+  id: 3
+  title: Another page, but without a permalink
+  body: No permalink is given so it should be generated automatically
+

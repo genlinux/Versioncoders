@@ -1,0 +1,26 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+valid_user:
+  id: 1
+  username: joe
+  email: joe@example.com
+  hashed_password: 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
+  enabled: true
+  profile: MyText
+  created_at: <%=1.days.ago.to_s(:db)%>
+  
+admin_user:
+  id: 2
+  username: admin
+  email: admin@example.com
+  hashed_password: 8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
+  created_at: <%=1.days.ago.to_s(:db)%>
+  
+editor_user:
+  id: 3
+  username: editor
+  email: editor@example.com
+  hashed_password: 1553cc62ff246044c683a61e203e65541990e7fcd4af9443d22b9557ecc9ac54
+  created_at: <%=1.days.ago.to_s(:db)%>
+  
+

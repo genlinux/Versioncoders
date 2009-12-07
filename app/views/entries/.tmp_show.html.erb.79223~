@@ -1,0 +1,40 @@
+<h3>
+	Comments
+</h3>
+<!--<p>
+  <b>User:</b>
+  <%=h @entry.user_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @entry.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @entry.body %>
+</p>
+
+<p>
+  <b>Comments count:</b>
+  <%=h @entry.comments_count %>
+</p>-->
+<% @entry.comments.each do |comment| -%>
+  <div class="comment">
+    <p class="commentfrom">At <%= comment.created_at.to_s(:short) %>,
+      <%= comment.user.username %> said:</p>
+    <% if is_logged_in? and logged_in_user.id == @entry.user.id -%>
+      <p class="commentdelete">
+         <%= link_to 'Delete this comment',comment_path(
+                 :user_id => @entry.user,
+                 :entry_id => @entry.id,
+                 :id => comment.id),
+               :confirm => 'Are you sure?',
+               :method => :delete -%>
+      </p>
+    <% end -%>
+    <p class="commentbody"><%=h comment.body %></p>
+  </div>
+<% end -%>
+<%= link_to 'Leave comments',new_user_entry_comment_path(@user,@entry)%> | <%=link_to 'Back',user_entries_path%>

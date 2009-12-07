@@ -1,0 +1,6 @@
+page.insert_html :bottom,:comments,:partial=>@comment
+page[@comment].visual_effect :highlight
+page[:new_comment].reset
+page.replace_html :notice, flash[:notice]
+page.visual_effect (:fade, "notice", :duration => 2)
+flash.discard

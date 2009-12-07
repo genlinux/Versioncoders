@@ -1,0 +1,12 @@
+<h2>Recently updated blogs</h2>
+<% @entries.each do |entry| %>
+  <p>
+    <%= link_to entry.user.username, user_entries_url([entry.user]) if entry.user%><br />
+    '<%= entry.title %>' was posted <%= time_ago_in_words(entry.created_at) %> ago
+  </p>
+<% end %>
+<% if @entries.total_entries > 1 %>
+  <p class="pagination">Pages: <strong>
+    <%=will_paginate @entries%>
+  </strong></p>
+<% end %>

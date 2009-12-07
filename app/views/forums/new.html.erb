@@ -1,0 +1,30 @@
+<!--<h1>New forum</h1>
+<% form_for(@forum) do |f| %>
+<%= f.error_messages %>
+<p>
+<%= f.label :name %><br />
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :description %><br />
+<%= f.text_area :description %>
+</p>
+<p>
+<%= f.label :topics_count %><br />
+<%= f.text_field :topics_count %>
+</p>
+<p>
+<%= f.submit "Create" %>
+</p>
+<% end %>--><!--<%= link_to 'Back', forums_path %>--><h2>New forum</h2>
+<% form_for(@forum) do |f| %>
+<%= f.error_messages %>
+<%= render :partial => 'form', :locals => {:f => f} -%>
+<!--  <p>
+<%= f.label :topics_count %><br />
+<%= f.text_field :topics_count %>
+</p>-->
+<p>
+    <%= f.submit "Create" %>
+</p>
+<% end %>

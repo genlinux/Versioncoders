@@ -1,0 +1,3 @@
+<li id="tag-<%= edit_tag.id %>">
+    <span><%= edit_tag.name %></span>
+</li>

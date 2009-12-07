@@ -1,0 +1,54 @@
+<% content_for :head do %>
+<%= auto_discovery_link_tag %>
+<% end %>
+<h2>News Articles</h2>
+<!--
+<table>
+<tr>
+<th>User</th>
+<th>Title</th>
+<th>Synopsis</th>
+<th>Published</th>
+<th>Published at</th>
+<th>Category</th>
+</tr>
+<% for article in @articles %>
+<tr>
+<td><%=h article.user_id %></td>
+<td><%=h article.title %></td>
+<td><%=h article.synopsis %></td>
+<td><%=h article.published %></td>
+<td><%=h article.published_at %></td>
+<td><%=h article.category_id %></td>
+<td><%= link_to 'Show', article %></td>
+<td><%= link_to 'Edit', edit_article_path(article) %></td>
+<td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>
+<% end %>
+</table>
+<br />
+<%= link_to 'New article', new_article_path %>-->
+<% if @articles.total_pages > 1 %>
+<p class="pagination">
+    Pages: <strong><%= will_paginate @articles%>
+    </strong>
+</p>
+<% end %>
+<% @articles.each do |article| %>
+<div class="article">
+    <h3><%= article.title %></h3>
+    <% if article.category %>
+    <p class="category">
+        Category: '<%= link_to article.category.name,
+        category_articles_path(article.category) %>'
+    </p>
+    <% end %>
+    <p>
+        <%=article.created_at.to_s(:short) if !article.created_at.blank?%> by <%=article.user.username %>
+        <br/>
+        <%= article.synopsis %>
+        <br/>
+        <%= link_to 'Read the full article', article_url(article) %> 
+    </p>
+</div>
+<% end %>

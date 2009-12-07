@@ -1,0 +1,33 @@
+<p>
+  <b>Username:</b>
+  <%=h @user.username %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Hashed password:</b>
+  <%=h @user.hashed_password %>
+</p>
+
+<p>
+  <b>Enabled:</b>
+  <%=h @user.enabled %>
+</p>
+
+<p>
+  <b>Profile:</b>
+  <%=h @user.profile %>
+</p>
+
+<p>
+  <b>Last login at:</b>
+  <%=h @user.last_login_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

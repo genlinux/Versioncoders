@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/117/trunk/railcoders/app/views/friends
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/116/trunk/railcoders/app/views/friends/new.html.erb
+END
+_friendship_with_edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/116/trunk/railcoders/app/views/friends/_friendship_with_edit.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/116/trunk/railcoders/app/views/friends/edit.html.erb
+END
+_friendship.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/117/trunk/railcoders/app/views/friends/_friendship.html.erb
+END
+_friends.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/116/trunk/railcoders/app/views/friends/_friends.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/116/trunk/railcoders/app/views/friends/index.html.erb
+END

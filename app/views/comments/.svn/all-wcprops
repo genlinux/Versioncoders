@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/121/trunk/railcoders/app/views/comments
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/119/trunk/railcoders/app/views/comments/new.html.erb
+END
+_comment.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/120/trunk/railcoders/app/views/comments/_comment.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/74/trunk/railcoders/app/views/comments/show.html.erb
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/74/trunk/railcoders/app/views/comments/edit.html.erb
+END
+create.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/121/trunk/railcoders/app/views/comments/create.js.rjs
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/74/trunk/railcoders/app/views/comments/index.html.erb
+END

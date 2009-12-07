@@ -1,0 +1,25 @@
+<h2>Edit photo details</h2>
+<%= link_to image_tag(@photo.public_filename('thumb')),user_photo_path(@photo.user,@photo) %>
+<ul id="taglist">
+    <%= render :partial => 'edit_tag', :collection => @photo.tags %>
+</ul>
+<% remote_form_for(:tag,:url =>add_tag_user_photo_path,:method => :put,
+:complete => "Field.clear('tag-name')") do |f| %>
+<%=f.error_messages %>
+<%= f.text_field :name, :id => 'tag-name' %>
+<%= f.submit 'Add Tag' %>
+<% end %>
+<% form_for([@user,@photo],:html => { :multipart => true }) do |f| %>
+<%=f.error_messages %>
+<p>
+    Title:
+    <br/>
+    <%= f.text_field 'title' %>
+</p>
+<p>
+    Description:
+    <br/>
+    <%= f.text_area 'body', :rows => 6, :cols => 40 %>
+</p>
+<%= f.submit "Save" %>or <%= link_to 'cancel',user_photos_path %>
+<% end %>

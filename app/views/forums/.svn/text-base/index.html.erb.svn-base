@@ -1,0 +1,56 @@
+<!--<h1>Listing forums</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Topics count</th>
+  </tr>
+
+<% for forum in @forums %>
+  <tr>
+    <td><%=h forum.name %></td>
+    <td><%=h forum.description %></td>
+    <td><%=h forum.topics_count %></td>
+    <td><%= link_to 'Show', forum %></td>
+    <td><%= link_to 'Edit', edit_forum_path(forum) %></td>
+    <td><%= link_to 'Destroy', forum, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New forum', new_forum_path %>-->
+<h2>Forums</h2>
+<% if is_logged_in? and logged_in_user.has_role?('Moderator') %>
+  <p><%= link_to 'Create New Forum', new_forum_path -%></p>
+<% end %>
+<table id="forums">
+  <tr>
+    <th class="name">Forum name</th>
+    <th class="topic">Topics</th>
+  </tr>
+  <% @forums.each do |forum| -%>
+  <tr class="<%= cycle('odd', 'even') %>">
+    <td class="name">
+       <div class="forumname">
+       	<!-- Reason for using forum_topics_path since it is nested -->
+         <%= link_to forum.name, forum_topics_path(:forum_id => forum) -%>
+	   </div>
+       <div class="forumdescription">
+         <%= forum.description -%>
+       </div>
+       <% if is_logged_in? and logged_in_user.has_role?('Moderator') -%>
+         <br />
+         <small>
+           <%= link_to 'edit', edit_forum_path(forum) %>
+           <%= link_to 'delete', forum_path(forum), :method => :delete,
+                  :confirm => 'Are you sure? This will delete this entire forum.' -%>
+         </small>
+       <% end -%>
+    </td>
+    <td class="topic"><%= forum.topics_count %></td>
+  </tr>
+  <% end -%>
+</table>

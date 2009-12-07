@@ -1,0 +1,46 @@
+<h2>Edit your account</h2>
+<p>
+    <%=link_to 'Show my profile',user_path(@user) %>
+</p>
+<% form_for(@user) do |f| %>
+<%= f.error_messages %>
+<!--<p>
+<%= f.label :username %><br />
+<%= f.text_field :username %>
+</p>-->
+<p>
+    <%= f.label :email %>
+    <br/>
+    <%= f.text_field :email ,:size=>60 %>
+</p>
+<!-- <p>
+<%= f.label :hashed_password %><br />
+<%= f.text_field :hashed_password %>
+</p>
+<p>
+<%= f.label :enabled %><br />
+<%= f.check_box :enabled %>
+</p>-->
+<p>
+ <%= f.label :password%><br />
+ <%= f.password_field :password, :size => 60 %>
+</p>
+<p>
+ <%= f.label :password_confirmation,"Password Confirmation"%><br />
+ <%= f.password_field :password_confirmation, :size => 60 %>
+</p>
+<p>
+    <%= f.label :profile %>
+    <br/>
+    <%= f.text_area :profile,:rows=>6,:cols=>60 %>
+</p>
+<!--<p>
+    <%= f.label :last_login_at %>
+    <br/>
+    <%= f.datetime_select :last_login_at %>
+</p>-->
+<p>
+    <%= f.submit "Save" %>
+</p>
+<% end %>
+<%= link_to 'Show', @user %> |<%= link_to 'Back', users_path %>

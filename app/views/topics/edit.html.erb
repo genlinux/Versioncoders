@@ -1,0 +1,28 @@
+<h1>Editing topic</h1>
+
+<% form_for(@forum,@topic,:forum_id => @topic.forum) do |f| %>
+  <%= f.error_messages %>
+
+<!--  <p>
+    <%#= f.label :forum_id %><br />
+    <%#= f.text_field :forum_id %>
+  </p>-->
+<!--  <p>
+    <%#= f.label :user_id %><br />
+    <%#= f.text_field :user_id %>
+  </p>-->
+  <p>
+    <%= f.label :subject %><br />
+    <%= f.text_field :name,:size => 40  %>
+  </p>
+<!--  <p>
+    <%#= f.label :posts_count %><br />
+    <%#= f.text_field :posts_count %>
+  </p>
+  <p>-->
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [@forum,@topic] %> |
+<%= link_to 'Back', forum_topics_path %>

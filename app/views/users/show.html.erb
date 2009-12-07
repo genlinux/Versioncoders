@@ -1,0 +1,49 @@
+<h2>User: <%=@user.username %></h2>
+<p>
+    Memeber since <%=@user.created_at.to_s(:long) %>
+</p>
+<p>
+    <%=@user.profile %>
+</p>
+<%=content_tag :ul,@entries.collect{|entry| content_tag(:li,link_to(entry.title,user_entry_path(:user_id => @user, :id => entry)))},:id=>'entries' %>
+<p>
+    <%= link_to "See all of #{@user.username}'s blog",user_entries_path(@user) %>
+</p>
+<h3>Photos</h3>
+<ul id="photos">
+    <%= render :partial => 'photos/photo', :collection => @photos %>
+</ul>
+<p>
+    <% if is_logged_in? and @user.id != logged_in_user.id %>
+    <% if logged_in_user.friends.include?(@user) %>
+    <%= @user.username %>is your friend<% else %>
+    <%= link_to "Add #{@user.username} as a friend",new_user_friend_path(logged_in_user) %>
+    <% end %>
+    <br/>
+    <% end %>
+    <%= link_to "See all of #{@user.username}'s photos",user_photos_path(@user) %>| <%= link_to "Edit my profile",edit_user_path %>
+</p>
+<p>
+  <%= link_to "#{@user.username}'s Tags",user_tags_path(:user_id => @user) %>
+</p>
+<%debugger%>
+<% if @flickr_feed %>
+<h3>Flickr Photos</h3>
+<p>
+  <ul id="photos">
+  <% @flickr_feed.items.values_at(0..3).each do |item| %>
+    <% if !item.nil? %>
+	<%thumb=item.description.match(/src\s*=\s*([\"']?)(.+?)([\"'])/).to_s.gsub('src=','').gsub('_m.', '_s.')%>
+	
+    <li>
+      <a href=<%=item.link%>>
+	  <img width="75" height="75" border="0"  alt=<%=item.title%> src=<%=thumb%>>
+	  </a>
+      <%= link_to image_tag(item.enclosure.url),item.link %>
+    </li>
+    <% end %>
+  <% end %>
+  </ul>
+  <%= link_to "See more", @flickr_feed.channel.link %>
+<p>
+<% end %>

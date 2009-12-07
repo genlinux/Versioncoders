@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm/install.rb
+END
+gmaps_api_key.yml.sample
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm/gmaps_api_key.yml.sample
+END
+rakefile.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm/rakefile.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm/README
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/123/trunk/railcoders/vendor/plugins/ym4r_gm/init.rb
+END

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/104/trunk/railcoders/test/fixtures
+END
+emails.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/95/trunk/railcoders/test/fixtures/emails.yml
+END
+friendships.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/104/trunk/railcoders/test/fixtures/friendships.yml
+END
+newsletters.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/95/trunk/railcoders/test/fixtures/newsletters.yml
+END
+categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/categories.yml
+END
+roles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/roles.yml
+END
+articles.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/articles.yml
+END
+photos.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/82/trunk/railcoders/test/fixtures/photos.yml
+END
+pages.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/46/trunk/railcoders/test/fixtures/pages.yml
+END
+topics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/topics.yml
+END
+roles_users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/63/trunk/railcoders/test/fixtures/roles_users.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/users.yml
+END
+entries.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/79/trunk/railcoders/test/fixtures/entries.yml
+END
+forums.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/forums.yml
+END
+posts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/64/trunk/railcoders/test/fixtures/posts.yml
+END
+comments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/74/trunk/railcoders/test/fixtures/comments.yml
+END

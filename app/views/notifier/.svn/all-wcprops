@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/101/trunk/railcoders/app/views/notifier
+END
+new_comment_notification.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/92/trunk/railcoders/app/views/notifier/new_comment_notification.html.erb
+END
+newsletter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/101/trunk/railcoders/app/views/notifier/newsletter.html.erb
+END
+new_comment_notification.text.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/93/trunk/railcoders/app/views/notifier/new_comment_notification.text.html.erb
+END

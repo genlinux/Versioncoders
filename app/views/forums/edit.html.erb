@@ -1,0 +1,9 @@
+<h2>Edit forum</h2>
+<% form_for(@forum) do |f| %>
+<%= f.error_messages %>
+<%= render :partial => 'form', :locals => {:f => f} -%>
+<p>
+    <%= f.submit "Update" %>
+</p>
+<% end %>
+<%= link_to 'Show', @forum %> |<%= link_to 'Back', forums_path %>

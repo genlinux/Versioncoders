@@ -1,0 +1,15 @@
+<h1>Editing post</h1>
+
+<% form_for([@forum,@topic,@post]) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :message %><br />
+    <%= f.text_area :body ,:rows=>8,:cols=>60%>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', ([@forum,@topic,@post]) %> |
+<%= link_to 'Back', forum_topic_posts_path %>
