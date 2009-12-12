@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/136/trunk/railcoders/app/drops
+END
+entry_drop.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/136/trunk/railcoders/app/drops/entry_drop.rb
+END
+user_drop.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/136/trunk/railcoders/app/drops/user_drop.rb
+END
+comment_drop.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/136/trunk/railcoders/app/drops/comment_drop.rb
+END

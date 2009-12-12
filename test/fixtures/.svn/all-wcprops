@@ -69,6 +69,12 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/!svn/ver/64/trunk/railcoders/test/fixtures/users.yml
 END
+usertemplates.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/136/trunk/railcoders/test/fixtures/usertemplates.yml
+END
 entries.yml
 K 25
 svn:wc:ra_dav:version-url

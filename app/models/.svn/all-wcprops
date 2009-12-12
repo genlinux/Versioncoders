@@ -43,7 +43,7 @@ entry.rb
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svn/!svn/ver/112/trunk/railcoders/app/models/entry.rb
+/svn/!svn/ver/136/trunk/railcoders/app/models/entry.rb
 END
 photo.rb
 K 25
@@ -67,13 +67,19 @@ user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/!svn/ver/130/trunk/railcoders/app/models/user.rb
+/svn/!svn/ver/136/trunk/railcoders/app/models/user.rb
 END
 notifier.rb
 K 25
 svn:wc:ra_dav:version-url
 V 57
 /svn/!svn/ver/101/trunk/railcoders/app/models/notifier.rb
+END
+usertemplate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/136/trunk/railcoders/app/models/usertemplate.rb
 END
 forum.rb
 K 25
@@ -90,6 +96,6 @@ END
 comment.rb
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/75/trunk/railcoders/app/models/comment.rb
+V 56
+/svn/!svn/ver/136/trunk/railcoders/app/models/comment.rb
 END

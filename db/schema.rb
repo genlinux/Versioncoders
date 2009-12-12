@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091205133644) do
+ActiveRecord::Schema.define(:version => 20091209151106) do
 
   create_table "articles", :force => true do |t|
     t.integer  "user_id"
@@ -211,5 +211,15 @@ ActiveRecord::Schema.define(:version => 20091205133644) do
   end
 
   add_index "users", ["username"], :name => "index_users_on_username"
+
+  create_table "usertemplates", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "usertemplates", ["user_id", "name"], :name => "index_usertemplates_on_user_id_and_name"
 
 end

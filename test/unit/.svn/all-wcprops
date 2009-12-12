@@ -57,6 +57,12 @@ svn:wc:ra_dav:version-url
 V 57
 /svn/!svn/ver/64/trunk/railcoders/test/unit/forum_test.rb
 END
+usertemplate_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/136/trunk/railcoders/test/unit/usertemplate_test.rb
+END
 notifier_test.rb
 K 25
 svn:wc:ra_dav:version-url

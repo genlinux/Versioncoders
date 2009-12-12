@@ -84,4 +84,10 @@ class User < ActiveRecord::Base
     
     return RSS::Parser.parse(rss_content,false)
   end
+  
+  #For liquid templates
+  def to_liquid
+    UserDrop.new(self)
+  end
+  
 end

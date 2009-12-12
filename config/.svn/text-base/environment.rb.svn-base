@@ -35,7 +35,9 @@ Rails::Initializer.run do |config|
   
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
-  
+  # For loading liquid drops
+    config.load_paths += %W( #{RAILS_ROOT}/app/drops #{RAILS_ROOT}/app/filters)  
+                          
   # Force all environments to use the same logger level
   # (by default production uses :info, the others :debug)
   # config.log_level = :debug

@@ -13,5 +13,9 @@ class Entry < ActiveRecord::Base
     self.user.update_attribute(:last_activity, "Wrote a blog entry")
     self.user.update_attribute(:last_activity_at, Time.now)
   end
+  #For Liquid template
+  def to_liquid
+    EntryDrop.new(self)
+  end
   
 end

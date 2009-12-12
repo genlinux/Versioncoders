@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
   #Many to many relationships using has_many through
   has_many :friendships
   has_many :friends, :through=> :friendships, :class_name=>'User'
+  has_many :usertemplates
   
   validates_presence_of :username,:email
   validates_presence_of :password, :if => :password_required?
@@ -84,4 +85,10 @@ class User < ActiveRecord::Base
     
     return RSS::Parser.parse(rss_content,false)
   end
+  
+  #For liquid templates
+  def to_liquid
+    UserDrop.new(self)
+  end
+  
 end
