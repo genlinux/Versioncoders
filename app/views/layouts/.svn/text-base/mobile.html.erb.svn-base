@@ -21,7 +21,7 @@
         <%= yield %>
       </div>
       <div id="menu">
-        <%= render :partial => 'shared/mobilemenu' %>
+        <%= render :partial => 'layouts/mobilemenu' %>
       </div>
     </div>
   </body>
